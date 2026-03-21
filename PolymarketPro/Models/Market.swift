@@ -6,6 +6,7 @@ struct Market: Codable, Identifiable {
     let volume24hr: Double?
     let outcomePrices: String?
     let outcomes: String?
+    let groupItemTitle: String?
 
     enum CodingKeys: String, CodingKey {
         case id
@@ -13,6 +14,7 @@ struct Market: Codable, Identifiable {
         case volume24hr = "volume24hr"
         case outcomePrices = "outcomePrices"
         case outcomes = "outcomes"
+        case groupItemTitle = "groupItemTitle"
     }
 
     // Parse outcomePrices JSON string e.g. "[\"0.65\",\"0.35\"]"
